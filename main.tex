@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt,reqno]{amsart}
+
+% Packages
+\usepackage{amsmath, amssymb, amsthm, comment, hyperref}
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs}
+\numberwithin{equation}{section}
+
+% Theorems
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+% Shortcuts
+\newcommand{\bb}{\mathbb}
+\newcommand{\fk}{\mathfrak}
+\newcommand{\bd}{\mathbf}
+\newcommand{\cal}{\mathcal}
+\newcommand{\pt}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppt}[3]{\frac{\partial^2 #1}{\partial#2\partial#3}}
+
+% Title
+\title{Title}
+\author{Name}
+\address{Address}
+\email{Email}
+\subjclass[2010]{*****}
+\keywords{***, ***}
+
+
+\begin{document}
+
+% Abstract
+\begin{abstract}
+    Great stuff.
+\end{abstract}
+
+\maketitle
+
+% Table of Contents
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+% Main Matter
+\section{Introduction}
+
+
+\section*{Acknowledgments}
+
+% Bibliography
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}
